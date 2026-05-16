@@ -120,6 +120,16 @@ header {
   margin: 0 auto;
 }
 
+.meeting-section-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.meeting-section-images img {
+  width: 148px;
+  border-radius: 8px;
+}
 footer img {
   display: none;
 }
