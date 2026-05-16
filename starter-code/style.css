@@ -7,3 +7,11 @@
 body {
   font-family: "Red Hat Display", sans-serif;
 }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 48px;
+}
