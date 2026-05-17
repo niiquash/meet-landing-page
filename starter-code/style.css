@@ -4,7 +4,8 @@
   padding: 0;
 }
 
-body {
+body,
+button {
   font-family: "Red Hat Display", sans-serif;
 }
 
@@ -33,12 +34,13 @@ header {
 }
 
 .hero img {
-  width: 114%;
+  width: 100%;
 }
 
 .intro-text {
   text-align: center;
-  margin: 48px 35px 0 35px;
+  margin: 0 auto;
+  margin-top: 48px;
   width: 305px;
 }
 
@@ -103,11 +105,13 @@ header {
   margin: 0 auto;
 }
 
-.divider-1-number span {
+.divider-1-number span,
+.divider-2-number span {
   width: 56px;
   height: 56px;
   border: 1px solid #d1d1df;
   border-radius: 50%;
+  background-color: white;
 
   display: flex;
   justify-content: center;
@@ -168,6 +172,69 @@ header {
   color: #87879d;
 }
 
+.divider-2-number {
+  margin-bottom: -28px;
+}
+
+footer {
+  position: relative;
+  z-index: -1;
+}
+
 footer img {
   display: none;
+}
+
+.mobile-footer-image {
+  display: block;
+  width: 100%;
+}
+
+.footer-section {
+  text-align: center;
+  padding: 64px 32px;
+  background-color: rgba(77, 150, 169, 0.87);
+  color: white;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.footer-section h2 {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 110%;
+}
+
+.footer-section p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.footer-button {
+  border: none;
+  padding: 16px 40px;
+  border-radius: 29px;
+
+  background-color: #855fb1;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.footer-button span {
+  color: #d9b8ff;
 }
