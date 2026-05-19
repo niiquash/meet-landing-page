@@ -28,20 +28,20 @@ header {
 
 .hero {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  overflow: hidden;
 }
 
 .hero img {
-  width: 100%;
+  width: 110%;
+  margin-left: -5%;
 }
 
 .intro-text {
   text-align: center;
   margin: 0 auto;
   margin-top: 48px;
-  width: 305px;
+  padding: 0 32px 32px 32px;
+  /* width: 305px; */
 }
 
 .intro-text h1 {
@@ -49,6 +49,10 @@ header {
   font-weight: 900;
   line-height: 110%;
   color: #28283d;
+}
+
+.wrap {
+  text-wrap: wrap;
 }
 
 .intro-text p {
@@ -64,6 +68,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -92,7 +97,6 @@ header {
 }
 
 .meetings-section {
-  margin-top: 32px;
   padding: 32px 32px 64px 32px;
 }
 
@@ -237,4 +241,57 @@ footer img {
 
 .footer-button span {
   color: #d9b8ff;
+}
+
+@media (min-width: 768px) {
+  .intro-text {
+    margin-top: 72px;
+    width: 448px;
+    padding: 0 32px 64px 32px;
+  }
+
+  .intro-text h1 {
+    font-size: 48px;
+  }
+
+  .intro-buttons {
+    flex-direction: row;
+  }
+
+  .meetings-section {
+    padding: 56px 32px 64px 32px;
+  }
+
+  .meeting-section-images {
+    display: flex;
+    gap: 24px;
+  }
+
+  .meeting-section-images img {
+    width: 152px;
+  }
+
+  .meetings-section-text {
+    width: 504px;
+  }
+
+  .meetings-section-text h2 {
+    font-size: 14px;
+  }
+
+  .meetings-section-text h3 {
+    font-size: 36px;
+  }
+
+  .mobile-footer-image {
+    display: none;
+  }
+
+  .tablet-footer-image {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
 }
